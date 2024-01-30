@@ -1,0 +1,15 @@
+.navbar_main_div{
+    background: #1f2029;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.navbar-links{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    /* font-size: large; */
+}
+.navbar-links:hover{
+    color: #6F00FF;
+}

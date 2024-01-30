@@ -1,0 +1,133 @@
+.OuterDiv{
+    background-color:#2c2f32;
+    height: 100vh;
+    padding: 2rem;
+}
+.chat-container{
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: black;
+    /* height: 75%; */
+}
+.bot-response{
+    color: white;
+    overflow-y: scroll;
+    height: 60vh; 
+   
+}
+.bot-response::-webkit-scrollbar {
+    width: 10px; 
+    background-color:none; 
+    
+}
+.bot-response::-webkit-scrollbar-thumb {
+    height: 15px;
+    background-color: gray; 
+    border-radius: 4px; 
+}
+.input-area{
+  display: flex;
+  justify-content: center;
+}
+.input-area>input{
+    width: 90%;
+    height: 50px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 1rem;
+    padding-left: 25px;
+    color: white;
+    font-size: large;
+    /* margin-bottom: 50px; */
+}
+.bard-click-btn{
+    background-color: black;
+    border: none;
+    position: relative;
+}
+.send-btn{
+   background-color: black;
+   color: white;
+   border: none;
+   cursor: pointer;
+   position: absolute;
+  top: 25px;
+  left: -3.5rem;
+}
+.input-area>input::placeholder{
+    color: white;
+}
+.animated-loading span {
+    animation: dots 1s infinite;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+  
+  @keyframes dots {
+    0% { opacity: 0.3; }
+    33% { opacity: 1; }
+    66% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+  .animated-loading-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+  
+  .animated-loading-search span {
+    animation: none;
+    opacity: 1;
+  }
+  @keyframes wave-animation {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(10px); 
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-loading-search span {
+    animation: wave-animation 2s ease-in-out infinite;
+    display: inline-block;
+    margin: 0 5px;
+    height: 20px;
+    width: 20px; 
+    background-color:  white !important;
+    border-radius: 50%; 
+  }
+  
+  .animated-loading-search span[data-index="2"] {
+    animation-delay: 0.2s;
+  }
+  
+  .animated-loading-search span[data-index="3"] {
+    animation-delay: 0.4s;
+  }
+  @media(max-width:570px){
+    .input-area>input{
+      width: 80%;
+    }
+    .input-area>input::placeholder{
+      font-size: small;
+  }
+  }
+  @media(max-width:350px){
+    .OuterDiv{
+      padding: 2px;
+    }
+    
+  }
+  
