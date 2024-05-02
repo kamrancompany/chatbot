@@ -120,8 +120,8 @@ background: #6F00FF;
     margin-right: 1.5rem;
     margin-left: 5px;
     /* margin-top: 5px; */
-    color:black;
-    line-height: 1.5rem;
+    color:rgba(19, 14, 14, 0.763);
+    /* line-height: 1.5rem; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
     font-size: small;
